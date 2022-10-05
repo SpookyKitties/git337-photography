@@ -69,12 +69,48 @@ main {
       place-self: center;
       gap: 5px;
       grid-template-columns: 420px 420px 420px;
-      img {
-        width: 420px;
+      color: #ffffff;
+      font-size: 16px;
+      .img-container {
+        position: relative;
+        img {
+          width: 420px;
+          position: relative;
+        }
+        //   img {
+        //     width: 33%;
+        //   }
+
+        .txt-container {
+          position: absolute;
+        }
+        &#chile,
+        &#iran,
+        &#mountains,
+        &#switzerland {
+          color: black;
+        }
+
+        &#desert {
+          .txt-container {
+            right: 40px;
+          }
+        }
+
+        .left {
+          left: 10px;
+        }
+        .right {
+          right: 20px;
+        }
+        .bottom {
+          bottom: 10px;
+        }
+        .top {
+          top: 5px;
+          left: 10px;
+        }
       }
-      //   img {
-      //     width: 33%;
-      //   }
     }
   }
 }

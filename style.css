@@ -63,9 +63,37 @@ main #gallery #pictures {
   place-self: center;
   gap: 5px;
   grid-template-columns: 420px 420px 420px;
+  color: #ffffff;
+  font-size: 16px;
 }
-main #gallery #pictures img {
+main #gallery #pictures .img-container {
+  position: relative;
+}
+main #gallery #pictures .img-container img {
   width: 420px;
+  position: relative;
+}
+main #gallery #pictures .img-container .txt-container {
+  position: absolute;
+}
+main #gallery #pictures .img-container#chile, main #gallery #pictures .img-container#iran, main #gallery #pictures .img-container#mountains, main #gallery #pictures .img-container#switzerland {
+  color: black;
+}
+main #gallery #pictures .img-container#desert .txt-container {
+  right: 40px;
+}
+main #gallery #pictures .img-container .left {
+  left: 10px;
+}
+main #gallery #pictures .img-container .right {
+  right: 20px;
+}
+main #gallery #pictures .img-container .bottom {
+  bottom: 10px;
+}
+main #gallery #pictures .img-container .top {
+  top: 5px;
+  left: 10px;
 }
 
 footer #contact {

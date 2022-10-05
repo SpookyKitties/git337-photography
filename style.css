@@ -49,6 +49,19 @@ main {
 main h2 {
   font-size: 40px;
 }
+main #about {
+  display: grid;
+  grid-template-columns: 850px 420px;
+  padding: 10px;
+}
+main #about h2 {
+  padding: 0;
+  margin: 0;
+}
+main #about #about-txt {
+  font-size: 20px;
+  text-align: right;
+}
 main #gallery {
   display: flex;
   flex-direction: column;
@@ -96,29 +109,60 @@ main #gallery #pictures .img-container .top {
   left: 10px;
 }
 
-footer #contact {
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  width: 850px;
 }
-footer #contact input,
-footer #contact input::placeholder {
+#contact h2 {
+  font-size: 40px;
+}
+#contact > * {
+  margin: 0;
+  padding: 0;
+}
+#contact p {
+  font-size: 20px;
+}
+#contact input,
+#contact input::placeholder {
   color: #007d7b;
+  height: 30px;
 }
-footer #contact input::placeholder {
+#contact input::placeholder {
   text-transform: uppercase;
+  font-weight: bold;
 }
-footer #contact form {
+#contact label {
+  font-size: 16px;
+}
+#contact form {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 850px;
   text-align: left;
+  gap: 5px;
   text-transform: uppercase;
 }
-footer #contact form > * {
+#contact form > * {
   width: 100%;
 }
-footer #contact form button {
+#contact form button {
   background-color: #007d7b;
   color: #ffffff;
   width: 25%;
   font-size: 16px;
+  border: none;
+  justify-self: center;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

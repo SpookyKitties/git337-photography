@@ -68,13 +68,19 @@ main #gallery {
   justify-content: center;
   width: 1310px;
 }
+main #gallery h2,
+main #gallery p {
+  margin: 0;
+  margin-left: 12.5px;
+  margin-bottom: 5px;
+}
 main #gallery p {
   font-size: 20px;
 }
 main #gallery #pictures {
   display: grid;
   place-self: center;
-  gap: 5px;
+  gap: 12.5px;
   grid-template-columns: 420px 420px 420px;
   color: #ffffff;
   font-size: 16px;

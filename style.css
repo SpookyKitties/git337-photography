@@ -1,0 +1,96 @@
+body {
+  background-color: black;
+  color: #ffffff;
+  width: 1270px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  width: 1310px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+header h1 {
+  color: #007d7b;
+}
+header nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+}
+header nav ul li a:hover {
+  color: #007d7b;
+}
+header nav ul li:last-child {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background-color: #007d7b;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+header nav ul li:last-child:hover {
+  background-color: #ff8284;
+}
+
+main {
+  background-color: #ffffff;
+  color: black;
+}
+main h2 {
+  font-size: 40px;
+}
+main #gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1310px;
+}
+main #gallery p {
+  font-size: 20px;
+}
+main #gallery #pictures {
+  display: grid;
+  place-self: center;
+  gap: 5px;
+  grid-template-columns: 420px 420px 420px;
+}
+main #gallery #pictures img {
+  width: 420px;
+}
+
+footer #contact {
+  text-align: center;
+  width: 850px;
+}
+footer #contact input,
+footer #contact input::placeholder {
+  color: #007d7b;
+}
+footer #contact input::placeholder {
+  text-transform: uppercase;
+}
+footer #contact form {
+  text-align: left;
+  text-transform: uppercase;
+}
+footer #contact form > * {
+  width: 100%;
+}
+footer #contact form button {
+  background-color: #007d7b;
+  color: #ffffff;
+  width: 25%;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */

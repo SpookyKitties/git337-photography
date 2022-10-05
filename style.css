@@ -86,6 +86,7 @@ main #gallery #pictures {
   font-size: 16px;
 }
 main #gallery #pictures .img-container {
+  margin: 0;
   position: relative;
 }
 main #gallery #pictures .img-container img {
